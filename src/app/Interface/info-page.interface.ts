@@ -1,3 +1,4 @@
+import { Equipo } from './info-equipo.interface';
 export interface InfoPage {
     titulo?:         string;
     email?:          string;
@@ -7,5 +8,5 @@ export interface InfoPage {
     twitter?:        string;
     instagran?:      string;
     tublr?:          string;
-    equipo_trabajo?: any[];
+    equipo_trabajo?: Equipo[];
 }
