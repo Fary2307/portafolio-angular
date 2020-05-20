@@ -23,7 +23,6 @@ export class InfoPageService {
       .subscribe((resp: InfoPage) => {
         this.info = resp;
         this.cargada = true;
-        console.log(resp.email);
       });
   }
   private cargarEquipo() {
@@ -32,7 +31,6 @@ export class InfoPageService {
       .get('https://angular-html-329e2.firebaseio.com/equipo.json')
       .subscribe((resp: Equipo[]) => {
         this.equipo = resp;
-        console.log(this.equipo);
       });
   }
 }
