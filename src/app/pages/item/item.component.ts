@@ -9,9 +9,8 @@ import { Productos } from '../../Interface/info.productos.interface';
   styleUrls: ['./item.component.css'],
 })
 export class ItemComponent implements OnInit {
-  
   detailProduct: Productos;
-  productoID : string;
+  productoID: string;
 
   constructor(
     private route: ActivatedRoute,
